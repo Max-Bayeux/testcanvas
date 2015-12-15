@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>testcanvas</title>
+  </head>
+  <body>
+    <canvas id="test" width="500" height="500"></canvas>
+    <script>
+    var canvas = document.getElementById("test");
+    var context = canvas.getContext("2d");
+    context.beginPath();
+    context.lineWidth="15";
+    context.arc(183,120,85,0,Math.PI*2,false);
+    context.strokeStyle="rgb(31, 205, 236)";
+    context.stroke();
+    context.fillStyle="rgb(31, 205, 236)"
+    context.fillRect(165,70,32,32);
+    context.fillStyle="rgb(78, 90, 198)"
+    context.fillRect(165,140,32,32);
+
+    </script>
+
+  </body>
+
+</html>
